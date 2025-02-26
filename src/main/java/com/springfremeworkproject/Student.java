@@ -2,6 +2,32 @@ package com.springfremeworkproject;
 
 public class Student {
 	
+	private Address address;
+
+	public Student(Address address) {
+		this.address = address;
+		
+	}
+	
+	public Student() {
+		
+	}
+	
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+	
+	public void showInfo() {
+		
+		System.out.println("Address is: " +address);
+	}
+	
+	
+	/*
 	private String studentName;
 
 	public String getStudentName() {
@@ -24,6 +50,7 @@ public class Student {
 		
 		System.out.println("This is the destroy() method ...");
 	}
+	*/
 	
 //	public void sayHello() {
 //		

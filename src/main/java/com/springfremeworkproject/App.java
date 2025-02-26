@@ -19,11 +19,8 @@ public class App {
 		 * does not instantiation under the hood
 		 * */
 		
-		Student s1 = (Student) context.getBean("student_bean");
-		System.out.println(s1.getStudentName());
-		
-		s1.destroyStudent();
-		
+		Student s = (Student) context.getBean("student_bean");
+		s.showInfo();
 		
 		((ConfigurableApplicationContext) context).close();
 	}
