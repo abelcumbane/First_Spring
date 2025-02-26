@@ -2,6 +2,8 @@ package com.springfremeworkproject;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
+
 
 
 public class App {
@@ -16,15 +18,14 @@ public class App {
 		 * We do not get a NULL exception because the spring container
 		 * does not instantiation under the hood
 		 * */
-		Student s = (Student) context.getBean("student_bean");
-		s.setStudentName("Abel");
-		System.out.println(s.getStudentName());
 		
 		Student s1 = (Student) context.getBean("student_bean");
 		System.out.println(s1.getStudentName());
 		
+		s1.destroyStudent();
 		
 		
+		((ConfigurableApplicationContext) context).close();
 	}
 
 }

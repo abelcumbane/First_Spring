@@ -6,6 +6,9 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean id = "student_bean" class = "com.springfremeworkproject.Student" scope = "prototype"></bean>
+    <bean id = "student_bean" class = "com.springfremeworkproject.Student" scope = "prototype"
+    	init-method = "initStudent" destroy-method = "destroyStudent">
+    	<property name="studentName" value = "Abel Rosa"></property>
+    </bean>
 
 </beans>
