@@ -11,9 +11,13 @@ public class AppConfiguration {
 		return new Student();
 	}
 	
-	@Bean
+	@Bean(name = "first_address")
 	public Address getAddress() {
-		return new Address();
+		return new Address("Rua 3, Maputo");
 	}
 
+	@Bean(name = "second_address")
+	public Address getAddress2() {
+		return new Address("Rua 10, C.Maputo");
+	}
 }

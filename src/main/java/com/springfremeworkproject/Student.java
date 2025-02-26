@@ -1,10 +1,12 @@
 package com.springfremeworkproject;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Student {
 	
 	@Autowired
+	@Qualifier(value = "second_address")
 	private Address address;
 
 	public Student(Address address) {
