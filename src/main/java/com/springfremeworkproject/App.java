@@ -17,7 +17,14 @@ public class App {
 		 * does not instantiation under the hood
 		 * */
 		Student s = (Student) context.getBean("student_bean");
-		s.sayHello();
+		s.setStudentName("Abel");
+		System.out.println(s.getStudentName());
+		
+		Student s1 = (Student) context.getBean("student_bean");
+		System.out.println(s1.getStudentName());
+		
+		
+		
 	}
 
 }
