@@ -1,8 +1,1 @@
-Mon Mar 31 21:53:44 WCAST 2025 - Gerando arquivo de log de commit
-fatal: Unable to create 'E:/Spring_Projects/First_Spring/.git/index.lock': File exists.
-
-Another git process seems to be running in this repository, e.g.
-an editor opened by 'git commit'. Please make sure all processes
-are terminated then try again. If it still fails, a git process
-may have crashed in this repository earlier:
-remove the file manually to continue.
+Mon Mar 31 21:53:45 WCAST 2025 - Gerando arquivo de log de commit
